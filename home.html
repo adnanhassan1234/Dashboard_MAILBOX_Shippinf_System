@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title> Dashboard</title>
+  <!--tailwind link-->
+  <!-- <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet"> -->
+
+  <link rel="shortcut icon" href="assests/img/apple-touch-icon.png" />
+  <!--bootstrap link-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css">
+  <!--bootstrap font awasome 4.7 version-->
+
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <link rel="stylesheet" href="assets/Responsive/responsive.css">
+
+  <!--font link closed-->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+
+  <!--aos link-->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="assets/css/default.css">
+
+</head>
+
+<body style="background-color:#f0f0f0;">
+ 
+
+    <div id="fixedTop">
+    </div>
+
+    <div class="page-wraper">
+        <header class="site-header d-flex mb-2">
+            <div class="container-fluid">
+                <div class="row pl-xxl-5 pr-xxl-5 pr-0">
+                    <div class="col-6 col-md-6 col-lg-6 py-3 d-flex align-items-center">
+                        <a href="home.html" title="Home" class="pr-2">
+                            <img src="assets/img/logo" alt="logo" class="roundLogo">
+                        </a>
+
+                        <div class="fs-9" style="color: rgb(12, 12, 12);font-weight: 600;">
+                                Dashboard
+
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-6 col-lg-6 text-right py-3 d-flex align-items-center justify-content-end">
+                        <a href="shop for me.html" title="Shop for Me" class="mr-4 d-none d-lg-inline-block">Shop for Me</a>
+
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-sm dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="background-color: rgb(238, 237, 237);  border: none; padding: none;"">
+                                <i class="fa fa-user"></i> adnan <span class="d-none d-lg-inline-block">h.</span>
+                            </button>
+                            <div class="dropdown-menu dropdown-menu-left pb-2">
+                                <a href="shop for me.html" title="Shop for Me" class="dropdown-item">Shop for Me</a>
+                                <a href="/client/mailout-mps/" title="Multiple-Package Mailout" class="dropdown-item">Multiple-Package Mailout</a>
+                                <a href="funds.html" title="Multiple-Package Mailout" class="dropdown-item">Edit a Profile</a>
+                                <a href="/client/deposit/" title="Transaction History" class="dropdown-item">Account History</a>
+                                <a href="/client/claim/create" title="Missing Package" class="dropdown-item">Missing Package</a>
+                                <a class="dropdown-item" href="https://planetexpress.com/contact-us/">Contact Us</a>
+                                <a href="/client/account/" title="Settings" class="dropdown-item">Settings</a>
+                                <a class="dropdown-item" href="/sign/out">Sign out</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+<!-- first -->
+
+<div class="page-content-padding" id="snippet--content" style="margin-top: 80px;">
+    <div class="container">
+<div class="flashes">
+</div><div id="snippet-newMessages-control"></div>
+
+
+<div class="overview">
+<div class="row mt-2 mb-2">
+<div class="col-12 col-lg-6 pt-lg-0 mb-2">
+<div class="panel">
+    <div class="panel-heading">
+        <div class="row align-items-end align-items-lg-start">
+            <div class="col-7 col-lg-12 text-left text-lg-center mb-0 pb-0">
+                    FREE MAILBOX
+            </div>
+        </div>
+    </div>
+
+    <div class="panel-body">
+            <h3 class="text-black" style="font-size: 1rem;">Hi adnan!</h3>
+            <p>To unlock your address add first deposit, it can be as little as $5 and you can use the money for shipping or any other services we provide.</p><br>
+
+            <a href='paypal.html' class="btn btn-sm btn" style="background-color: #28a745; color: white;">
+                <i class="fa fa-plus-circle" aria-hidden="true"></i>
+                Add funds
+            </a>
+
+        <div class="mt-3 pt-3 border-t fs-8 text-center">
+            <div class="mb-2 font-weight-bold">Upgrade to PREMIUM and get:</div>
+            <div class="text-grey mb-2">Consolidate packages for maximum savings</div>
+            <div class="text-grey mb-2">Multiple-Package Mailout</div>
+            <div class="text-grey mb-2">45 days of free storage</div>
+            <div class="text-grey"><a href="https://planetexpress.com/sales-tax/" title="Sales Tax" class="text-link text-grey" target="_blank">No sales tax on purchases in Tualatin, Oregon</a></div>
+            <div class="mt-3">
+                <a href="plan.html" class="btn btn btn-sm text-uppercase mb-2 font-weight-bold" style="background-color: #28a745; color: white;">
+                    Change plan
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<div class="col-12 col-lg-6 pt-lg-0 mt-lg-0">
+<div class="panel mb-2">
+    <div class="panel-heading">
+        <div class="row align-items-end align-items-lg-start">
+            <div class="col-12 text-left text-lg-center mb-0 pb-0 text-uppercase">
+                My Account
+            </div>
+        </div>
+    </div>
+
+<!-- panel-body -->
+
+    <div class="panel-body">
+        <div class="d-flex p-3 flex-column justify-content-between">
+            <div>
+                <div class="mb-2">
+                    <span>Current deposit (<a href="transaction.html" class="text-link text-newBlue small">Detail</a>):</span>
+                    <span class="fs-115 font-weight-bold float-right d-block">$0.00</span>
+                </div>
+                <div class="mb-2">
+                    <span>Ready for Mailout :</span>
+                    <span class="fs-115 font-weight-bold text-black float-right d-block">$0.00</span>
+                </div class=mb-2>
+                <div>
+                    <span>Pending ShopForMe orders:</span>
+                    <span class="fs-115 font-weight-bold text-black float-right d-block">$0.00</span>
+                </div>
+                <div class="pt-2">
+                    <span>
+                            Remaining deposit
+
+                        <a href="paypal.html" class="text-success font-weight-bold fs-8 d-inline-block ml-2">
+                            <i class="fa fa-plus fs-8"></i>
+                            Add funds
+                        </a>
+                    </span>
+                    <span class="fs-115 font-weight-bold text-black float-right d-block">$0.00</span>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<!-- side -->
+
+<div class="pt-1 mt-4">
+    <div class="panel">
+        <div class="panel-heading">
+            <div class="row align-items-end align-items-lg-start">
+                <div class="col-12 text-left mb-0 pb-0 text-uppercase text-center">
+                    Auctions
+                </div>
+            </div>
+        </div>
+
+        <div class="panel-body">
+            <div class="d-flex p-4 flex-column justify-content-between p-4Pending ShopForMe orders:">
+                <p>Visit our auction website to bid on some amazing items. Then send the items you won to your home for the best shipping rates with Planet Express.</p>
+                <!-- <a href="shop2.html" title="Go to Auctions" class="mr-4 d-none d-lg-inline-block">Shop for me 2</a> -->
+                <!-- https://auctions.planetexpress.com -->
+
+            </div>
+        </div>
+    </div>
+    </div>
+</div>
+</div>
+</div>
+
+
+<!-- col-12 -->
+<!-- 
+<div class="panel mb-5">
+    <div class="panel-body pb-2">
+        <div class="row">
+            <div class="col-12">
+                <div class="mb-2">
+                    <div class="mr-2 d-lg-inline-block">
+                        <strong class="fs-12">Claims</strong>
+                    </div>
+                    (<a href="/client/claim/create" class="fs-8">Open Claim</a>)
+                </div>
+            </div>
+        </div>
+    </div>
+</div> -->
+
+
+<!-- tabs -->
+
+
+<div class="row pb-4">
+    <div class="col-12">
+<div class="grid-packet" id="snippet-newGrid-grid">
+    <span id="consolidation-link" data-url="/client/?do=newGrid-addConsolidation"></span>
+    <div id="jsInfo"
+            data-numActive="0"
+         data-declarationUser=""
+         data-selectedWarehouse="3"
+    ></div>
+    <div>
+<div class="grid tableNew" data-grid-name="newGrid-grid">
+<div id="snippet-newGrid-grid-rows">
+
+
+
+
+<!-- form-tabs -->
+    
+    <form id="frm-newGrid-grid-form" class="ajax">
+
+        <div class="grid-top">
+<div class="container pr-0 pl-0 mb-2 mt-5 mt-lg-3">
+<div class="row d-flex">
+<div class="col-12 col-lg-7 d-flex align-items-center order-2 order-lg-1 mb-2 mb-lg-0">
+<div class="d-flex align-items-center">
+        <!-- <a href="/client/?newGrid-grid-menuControl-warehouseSelectControl-id=1&amp;do=newGrid-grid-menuControl-warehouseSelectControl-select&amp;newGrid-grid-menuControl-warehouseSelectControl-_sec=JrCGFogr" class="mr-4 text-black">
+            Gardena, CA (0)
+        </a>
+        <a href="/client/?newGrid-grid-menuControl-warehouseSelectControl-id=3&amp;do=newGrid-grid-menuControl-warehouseSelectControl-select&amp;newGrid-grid-menuControl-warehouseSelectControl-_sec=om-xbTmp" class="font-weight-bold fs-11 mr-4 text-black">
+            United Kingdom (0)
+        </a> -->
+</div>
+</div>
+
+<!-- <div class="col-12 col-lg-5 text-lg-right order-1 order-lg-2 mb-3 mb-lg-0">
+    <div class="fakeSeachForm" class="d-flex">
+        <input type="text" class="font-weight-bold p-2 mw-100 w-300" placeholder="Type in Package Label or Tracking Number" name="filter[search]" id="frm-newGrid-grid-form-filter-search">
+        <button type="submit" class="fakeSeachSubmit p-2" name="filter[filter]" value="Filter">
+            Search
+        </button>
+    </div>
+</div> -->
+</div>
+</div>
+
+<div class="container-fluid">
+    <div class="col-12 pr-0 pl-0 mb-4" id="panel">
+        <div class="panel">
+        <nav class="submenu submenu-sm submenu2">
+            <ul class="two d-flex" style="text-decoration: none;">
+        
+                <li class="active">
+                    <a href="acount.html">
+                        Packages in Account
+                        <span class="badge badge-success">
+                            0
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="mailout.html">
+                        Ready for Mailout
+                        <span class="badge badge-light">
+                            0
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="sent.html">
+                        Sent
+                        <span class="badge badge-light">
+                            0
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="trashed.html">
+                        Trashed
+                        <span class="badge badge-light">
+                            0
+                        </span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        </div>
+        </div>
+        
+</div>
+        </div>
+
+
+
+<!-- start -->
+
+
+<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for package Label Tracking Number">
+
+  <table id="myTable" style="background-color: white;">
+    <tr class="header">
+      <th style="width:60%;">Pakages</th>
+      <th style="width:40%;"></th>
+    </tr>
+    <tr>
+      <td>
+  
+           
+  
+            <div class="row">
+                <div class="col-lg-4 col-12">
+                  <div class="form-check">
+                      <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    </div>
+                  <div class="image-section ml-5">
+                      <img src="assets/img/table.jpg" alt="" width="100%"> 
+                      
+                  </div>
+                </div>
+                <div class="col-lg-8 col-12">
+                  <div class="full">
+                
+                      <div class="button-section ml-3 m-2">
+                      <a href=""><button type="button" class="btn">PACKAGE AMR</button></a>
+                        <p class="mt-2">Location  <span>Tualatin, OR</span></p>
+                        <p>Status  <span>new</span></p>
+                        <p>IN Tracking # <span> <a href="">C11575416098257</a> </span></p>
+                        <p>Dim<span> 14.00 x 12.00 x 3.00 in</span> Weight <span>1.00 ibs</span></p>
+                        <p>Entered<span>jul 1, 2021 03:21pm </span></p>
+                      </div>
+                      
+                  </div>
+                </div>
+            </div>
+  
+  
+      </td>
+      <td>
+          
+          
+                 <div class="row">
+                     <div class="col-lg-7 col-md-12">
+                         <div class="full-section mb-4">
+                             <h5 style="font-size: 18px;">Customs Declaration:</h5>
+                             <p style="color: rgb(61, 61, 223);"><i class="fa fa-times" aria-hidden="true"></i> Fill out the Declaration</p>
+                             <h4 class="mt-4" style="font-size: 18px;">Mailout</h4>
+                             <p>Not scheduled</p>
+                         </div>
+                     </div>
+  
+                     <div class="col-lg-5 col-md-12">
+                      <div class="full-section target">
+                       <a href="mailout-page.html"><button type="button" class="btn"><i class="fa fa-envelope" aria-hidden="true"></i> MAILOUT</button></a>   
+                          <div class="anker mt-5">
+                              <a href="request.html" class="">Special request</a><br>
+                          <a href="detail.html" class="">Detail</a>
+                          </div>
+                      </div>
+                  </div>
+                 </div>
+
+               
+      
+      
+      </td>
+  
+  
+    </tr>
+    <tr>
+      <td>
+  
+          <div class="row">
+              <div class="col-lg-4 col-12">
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                  </div>
+                <div class="image-section ml-5">
+                    <img src="assets/img/table.jpg" alt="" width="100%"> 
+                    
+                </div>
+              </div>
+              <div class="col-lg-8 col-12">
+                <div class="full">
+              
+                    <div class="button-section ml-3 m-2">
+                     <a href=""><button type="button" class="btn">PACKAGE AMQ</button></a> 
+                      <p class="mt-2">Location  <span>Tualatin, OR</span></p>
+                      <p>Status  <span>new</span></p>
+                      <p>IN Tracking # <span> <a href="">IZXX29500353753898</a> </span></p>
+              
+                    </div>
+                    
+                </div>
+              </div>
+          </div>
+  
+  
+  
+      </td>
+  
+      <td>
+          
+          
+          <div class="row">
+              <div class="col-lg-7 col-md-12">
+                  <div class="full-section ">
+                      <h5 style="font-size: 18px;">Customs Declaration:</h5>
+                      <p style="color: rgb(61, 61, 223);"><i class="fa fa-times" aria-hidden="true"></i> Fill out the Declaration</p>
+                      <h4 class="mt-4" style="font-size: 18px;">Mailout</h4>
+                      <p>Not scheduled</px>
+                  </div>
+              </div>
+  
+              <div class="col-lg-5 col-md-12">
+               <div class="full-section target">
+                 <a href="mailout-page.html"><button type="button" class="btn"><i class="fa fa-envelope" aria-hidden="true"></i> MAILOUT</button></a>  
+                   <div class="anker mt-5">
+                       <a href="request.html" class="">Special request</a><br>
+                   <a href="detail.html" class="">Detail</a>
+                   </div>
+               </div>
+           </div>
+          </div>
+      
+     
+
+      </td>
+   
+    </tr>
+    <!-- <div class="button-section mx-auto text-center">
+        <a href=""><button type="button" class="btn-primary">CONSOLIDATE selected packages</button></a> 
+     </div> -->
+  </table>
+  
+  <div class="button-section mx-auto text-center">
+    <a href="packages.html"><button type="button" class="btn-primary">CONSOLIDATE selected packages</button></a> 
+ </div>
+
+
+
+
+
+
+<!-- 
+<dl id="tab">
+    <div class="container">
+        <div class="row">
+   <div class="full">
+                
+    <dt><a href="#tab1" class="on">Packages in Account <span class="badge badge-success">
+        0
+    </span></a></dt>
+    
+    <dd id="tab1">
+        <a href="#">0</a>
+       
+    </dd>
+
+    
+    <dt><a href="#tab2">   Ready for Mailout
+        <span class="badge badge-light">
+            0
+        </span></a></dt>
+    <dd id="tab2">
+        <a href="#">TAB2</a>
+    </dd>
+    <dt><a href="#tab3">   Sent
+        <span class="badge badge-light">
+            0
+        </span></a></dt>
+    <dd id="tab3">
+        <a href="#">TAB3</a>
+    </dd>
+    <dt><a href="#tab4"> Trashed
+        <span class="badge badge-light">
+            0
+        </span></a></dt>
+    <dd id="tab4">
+        <a href="#">TAB4</a>
+    </dd>
+   </div>
+        </div>
+    </div>
+</dl> -->
+
+<!--      
+    <div class="mb-3">
+        <div class="row">
+            <div class="col-12 col-lg-6">
+            </div>
+            <div class="col-12 col-lg-6 text-right">
+<div class="items-per-page">
+
+<div class="d-flex text-center justify-content-center justify-content-lg-end align-items-center mt-3 mt-md-0">
+    <small>Items per page</small>
+    <div class="dropdown">
+        <button class="btn btn-light dropdown-toggle border-secondary btn-sm px-4 ml-2" type="button" data-toggle="dropdown">
+            10
+        </button>
+        <div class="dropdown-menu">
+            <a class="dropdown-item dropdown-item text-decoration-none" href="">
+                10
+            </a>
+            <a class="dropdown-item dropdown-item text-decoration-none" href="">
+                20
+            </a>
+            <a class="dropdown-item dropdown-item text-decoration-none" href="">
+                50
+            </a>
+            <a class="dropdown-item dropdown-item text-decoration-none" href="">
+                100
+            </a>
+            <a class="dropdown-item dropdown-item text-decoration-none" href="">
+                500
+            </a>
+        </div>
+    </div>
+</div>
+</div>
+            </div>
+        </div>
+
+    </div>
+<input type="hidden" name="_do" value="newGrid-grid-form-submit"><!--[if IE]><input type=IEbug disabled style="display:none"><![endif]-->
+    <!-- </form> --> 
+
+
+
+
+
+
+  <!--javascript link-->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>
+  <!--aos link-->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <!-- tabs -->
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script defer src="js/custom.js"></script>
+   
+
+
+
+
+
+<style>
+
+
+#myInput {
+  background-image: url('/css/searchicon.png'); /* Add a search icon to input */
+  background-position: 10px 12px; /* Position the search icon */
+  background-repeat: no-repeat; /* Do not repeat the icon image */
+  width: 100%; /* Full-width */
+  font-size: 16px; /* Increase font-size */
+  padding: 12px 20px 12px 40px; /* Add some padding */
+  border: 1px solid #ddd; /* Add a grey border */
+  margin-bottom: 12px; /* Add some space below the input */
+}
+
+#myTable {
+  border-collapse: collapse; /* Collapse borders */
+  width: 100%; /* Full-width */
+  border: 1px solid #ddd; /* Add a grey border */
+  font-size: 18px; /* Increase font-size */
+}
+
+#myTable th, #myTable td {
+  text-align: left; /* Left-align text */
+  padding: 12px; /* Add padding */
+}
+
+#myTable tr {
+  /* Add a bottom border to all table rows */
+  border-bottom: 1px solid #ddd;
+}
+
+#myTable tr.header, #myTable tr:hover {
+  /* Add a grey background color to the table header and on hover */
+  background-color: rgb(252, 251, 251);
+}
+
+.btn{
+
+    background-color:rgb(219, 206, 206);
+    /* padding: 8px; */
+    color: black;
+    font-weight: bold;
+    /* font-size: 16px; */
+    border: 2px solid gray;
+    padding: 5px 18px;
+    font-size: 14px;
+}
+.btn:hover{
+
+background-color:rgb(226, 182, 182);
+padding: 8px;
+color: black;
+font-weight: bold;
+padding: 5px 18px;
+    font-size: 14px;
+}
+#myTable span{
+    color: black;
+    font-weight: bold;
+    font-size: 14px;
+}
+#myTable .fa{
+    color: gray;
+    font-weight: bold;
+    /* font-size: 14px; */
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 3px;
+}
+
+.form-check-input {
+    position: absolute;
+    margin-top: 1.3rem;
+    margin-left: -1.25rem;
+    padding: 2px !important;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #007bff;
+    border-color: #007bff;
+    padding: 7px;
+    margin-top: 17px;
+    /* margin-bottom: 22px; */
+}
+</style>
+
+
+
+
+
+
+</body>
+
+</html>
+
+
+<script>
+
+function myFunction() {
+  // Declare variables
+  var input, filter, table, tr, td, i, txtValue;
+  input = document.getElementById("myInput");
+  filter = input.value.toUpperCase();
+  table = document.getElementById("myTable");
+  tr = table.getElementsByTagName("tr");
+
+  // Loop through all table rows, and hide those who don't match the search query
+  for (i = 0; i < tr.length; i++) {
+    td = tr[i].getElementsByTagName("td")[0];
+    if (td) {
+      txtValue = td.textContent || td.innerText;
+      if (txtValue.toUpperCase().indexOf(filter) > -1) {
+        tr[i].style.display = "";
+      } else {
+        tr[i].style.display = "none";
+      }
+    }
+  }
+};
+
+</script>

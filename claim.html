@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>
+    Claims</title>
+  <!--tailwind link-->
+  <!-- <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet"> -->
+
+  <link rel="shortcut icon" href="assests/img/apple-touch-icon.png" />
+  <!--bootstrap link-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css">
+  <!--bootstrap font awasome 4.7 version-->
+
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <link rel="stylesheet" href="assets/Responsive/responsive.css">
+
+  <!--font link closed-->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+
+  <!--aos link-->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <!-- <link rel="stylesheet" href="assets/css/default.css"> -->
+
+     <!-- datatable -->
+     <link rel="stylesheet" href="https://cdn.datatables.net/1.10.23/css/jquery.dataTables.min.css"> 
+
+ 
+</head>
+
+<body style="background-color:#f0f0f0;">
+ 
+
+    <div id="fixedTop">
+    </div>
+
+    <div class="page-wraper">
+        <header class="site-header d-flex mb-2">
+            <div class="container-fluid">
+                <div class="row pl-xxl-5 pr-xxl-5 pr-0">
+                    <div class="col-6 col-md-6 col-lg-6 py-3 d-flex align-items-center">
+                        <a href="home.html" title="Home" class="pr-2">
+                            <img src="assets/img/logo" alt="logo" class="roundLogo">
+                        </a>
+
+                        <div class="fs-9" style="color: rgb(12, 12, 12);font-weight: 600;">
+                                
+                           
+                              Claims
+
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-6 col-lg-6 text-right py-3 d-flex align-items-center justify-content-end">
+                        <a href="shop for me.html" title="Shop for Me" class="mr-4 d-none d-lg-inline-block">Shop for Me</a>
+
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-sm dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="background-color: rgb(238, 237, 237);">
+                                <i class="fa fa-user"></i> adnan <span class="d-none d-lg-inline-block">h.</span>
+                            </button>
+                            <div class="dropdown-menu dropdown-menu-left pb-2">
+                                <a href="shop for me.html" title="Shop for Me" class="dropdown-item">Shop for Me</a>
+                                <a href="/client/mailout-mps/" title="Multiple-Package Mailout" class="dropdown-item">Multiple-Package Mailout</a>
+                                <a href="funds.html" title="Multiple-Package Mailout" class="dropdown-item">Edit a Profile</a>
+                                <a href="/client/deposit/" title="Transaction History" class="dropdown-item">Account History</a>
+                                <a href="/client/claim/create" title="Missing Package" class="dropdown-item">Missing Package</a>
+                                <a class="dropdown-item" href="https://planetexpress.com/contact-us/">Contact Us</a>
+                                <a href="/client/account/" title="Settings" class="dropdown-item">Settings</a>
+                                <a class="dropdown-item" href="/sign/out">Sign out</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+<!-- crumb -->
+
+<div class="container-fluid"  style="margin-top: 84px;">
+    <div class="row">
+        <div class="col-12 pb-2 small mb-2">
+<a href="home.html">Dashboard</a> /&nbsp;
+<a href="claim.html">
+  Claims</a>
+        </div>
+    </div>
+</div>
+
+
+
+
+<!-- transaction-tabs -->
+<div class="page-content-padding" id="snippet--content" >
+    <div class="container-fluid">
+<div class="flashes">
+</div><div id="snippet-newMessages-control"></div>
+
+
+<div class="row">
+<div class="col-12 col-md-12 col-lg-2">
+<div class="panel mb-3">
+<nav class="submenu mt-5">
+<ul>
+<li >
+    <a title="Transaction History" href="transaction.html">Transaction History</a>
+</li>
+<li class="active">
+    <a title="Claims" href="claim.html">Claims</a>
+</li>
+<li>
+    <a title="Consolidations" href="consoldation.html">Consolidations</a>
+</li>
+<li>
+    <a title="Special Requests" href="special.html">Special Requests</a>
+</li>
+<li>
+    <a title="Reported Errors" href="report.html">Reported Errors</a>
+</li>
+</ul>
+</nav>
+</div>  
+
+  </div>
+
+</div>
+
+
+
+
+
+<!-- table-section -->
+<div class="containe database pb-5" style="overflow:scroll;background-color: white; padding: 14px;">
+  <table id="datatable" class="display">
+    <thead>
+        <tr>
+            <th>  Claim Id </th>
+            <th> Packet Label </th>
+            <th> Tracking Number</th>
+            <th> Category</th> 
+            <th> Status</th> 
+            <th> Created</th>
+            <th> Amount </th>
+            <th> Payment Status </th>
+            <th> Status </th>
+            <th> Agent </th>
+            <th> Date </th>
+            <th> Actions </th>
+        </tr>
+    </thead>
+    <tbody>
+
+        
+                    <tr>
+                        <td> #76 </td>
+                        <td> SUDHIR MATTE </td> 
+                        <td> TestService </td>
+                        <td> 122 </td>
+                        <td> 21 </td>
+                        <td> 2 </td>
+                        <td> 244 </td>
+                        <td> 
+
+                            Refund
+                        </td>
+                        <td> 
+
+                            Open
+                        </td> 
+                         <td> Vijay </td>
+                        <td> 14/07/2021 </td>
+                        <td>
+                        
+                            <div class="dropdown">
+                                <a class="btn btn-outline-primary dropdown-toggle" role="button" data-toggle="dropdown">
+                                    <i class="fa fa-ellipsis-h"></i>
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-right">
+                                    <form method='post' action="/view_order.php">
+                                        
+                                        <input type="hidden" required name='ID' value='76'/>
+                                        <button class="dropdown-item" name='submit' style='cursor: pointer' type='submit'> <i class="fa fa-envelope-open"></i> View </button>
+
+                                    </form>
+                                    <form method='post' action="/order_update.php">
+                                        
+                                        <input type="hidden" required name='ID' value='76'/>
+                                        <button class="dropdown-item" name='submit' style='cursor: pointer' type='submit'> <i class="fa fa-pencil"></i> Update </button>
+
+                                    </form>
+                                    <form method='post' action="include/delete_order.php">
+                                        
+                                        <input type="hidden" name='ID' value='76'/>
+                                        <button class="dropdown-item" style='cursor: pointer' type='submit'> <i class="fa fa-trash"></i> Delete </button>
+                                    
+                                    </form>
+                                </div>
+                            </div>
+
+                        </td>
+                    </tr>
+                    
+                
+                    <tr>
+                        <td> #77 </td>
+                        <td> KAIKADU SHENDRE </td> 
+                        <td> Pan new </td>
+                        <td> 250 </td>
+                        <td> 110 </td>
+                        <td> 1 </td>
+                        <td> 250 </td>
+                        <td> 
+
+                            Paid
+                        </td>
+                        <td> 
+
+                            Open
+                        </td> 
+                         <td> Khom </td>
+                        <td> 14/07/2021 </td>
+                        <td>
+                        
+                            <div class="dropdown">
+                                <a class="btn btn-outline-primary dropdown-toggle" role="button" data-toggle="dropdown">
+                                    <i class="fa fa-ellipsis-h"></i>
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-right">
+                                    <form method='post' action="/view_order.php">
+                                        
+                                        <input type="hidden" required name='ID' value='77'/>
+                                        <button class="dropdown-item" name='submit' style='cursor: pointer' type='submit'> <i class="fa fa-envelope-open"></i> View </button>
+
+                                    </form>
+                                    <form method='post' action="/order_update.php">
+                                        
+                                        <input type="hidden" required name='ID' value='77'/>
+                                        <button class="dropdown-item" name='submit' style='cursor: pointer' type='submit'> <i class="fa fa-pencil"></i> Update </button>
+
+                                    </form>
+                                    <form method='post' action="include/delete_order.php">
+                                        
+                                        <input type="hidden" name='ID' value='77'/>
+                                        <button class="dropdown-item" style='cursor: pointer' type='submit'> <i class="fa fa-trash"></i> Delete </button>
+                                    
+                                    </form>
+                                </div>
+                            </div>
+
+                        </td>
+                    </tr>
+                    
+                
+                    <tr>
+                        <td> #78 </td>
+                        <td> SMITA WADHAI </td> 
+                        <td> GUGOA </td>
+                        <td> 100 </td>
+                        <td> 10 </td>
+                        <td> 1 </td>
+                        <td> 100 </td>
+                        <td> 
+
+                            Paid
+                        </td>
+                        <td> 
+
+                            Closed 
+                        </td> 
+                         <td> Khom </td>
+                        <td> 15/07/2021 </td>
+                        <td>
+                        
+                            <div class="dropdown">
+                                <a class="btn btn-outline-primary dropdown-toggle" role="button" data-toggle="dropdown">
+                                    <i class="fa fa-ellipsis-h"></i>
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-right">
+                                    <form method='post' action="/view_order.php">
+                                        
+                                        <input type="hidden" required name='ID' value='78'/>
+                                        <button class="dropdown-item" name='submit' style='cursor: pointer' type='submit'> <i class="fa fa-envelope-open"></i> View </button>
+
+                                    </form>
+                                    <form method='post' action="/order_update.php">
+                                        
+                                        <input type="hidden" required name='ID' value='78'/>
+                                        <button class="dropdown-item" name='submit' style='cursor: pointer' type='submit'> <i class="fa fa-pencil"></i> Update </button>
+
+                                    </form>
+                                    <form method='post' action="include/delete_order.php">
+                                        
+                                        <input type="hidden" name='ID' value='78'/>
+                                        <button class="dropdown-item" style='cursor: pointer' type='submit'> <i class="fa fa-trash"></i> Delete </button>
+                                    
+                                    </form>
+                                </div>
+                            </div>
+
+                        </td>
+                    </tr>
+                    
+                                                                    
+    </tbody> 
+</table>
+
+</div>
+
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+<script src="https://cdn.datatables.net/1.10.25/js/jquery.dataTables.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
+
+ 
+
+  <script>
+
+
+// top-function
+
+    mybutton = document.getElementById("myBtn");
+    window.onscroll = function () { scrollFunction() };
+
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      }
+      else {
+        mybutton.style.display = "none";
+      }
+    }
+
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+
+
+
+    
+  </script>
+
+
+<style>
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    outline: none;
+}
+*::selection{
+    background-color: red;
+    color: white; 
+}
+.submenu ul li.active a {
+    background-color: #a8dba8;
+    color: #000;
+    font-weight: bold;
+}
+.submenu ul li a {
+    display: block;
+    color: #000;
+    text-decoration: none;
+    /* padding: .8rem; */
+}
+tfoot input {
+    width: 100%;
+    padding: 3px;
+    box-sizing: border-box;
+    overflow: scroll;
+}
+table{
+    overflow: scroll;
+}
+.dataTables_wrapper .dataTables_filter input {
+    border: 1px solid #aaa;
+    border-radius: 3px;
+    padding: 5px;
+    background-color: transparent;
+    margin-left: 3px;
+    margin-top: 22px;
+}
+
+
+tfoot input {
+    width: 100%;
+    padding: 8px 13px;
+    box-sizing: border-box;
+    background-color: transparent;
+    border: 2px solid gray;
+}
+.database{
+  margin-top: -246px;
+  width: 1100px;
+    float: right;
+ /* margin-left: 204px; */
+}
+
+
+/* responsive */
+
+/* responsive */
+
+@media only screen and (max-width:1326px){
+    .database{
+  margin-top: -246px;
+  width: 908px;
+ margin: auto;
+ margin-top: -270px;
+}
+
+  }
+  
+@media only screen and (max-width:1105px){
+    .database{
+  margin-top: -246px;
+  width: 820px;
+ margin: auto;
+ margin-top: -270px;
+}
+
+  }
+  @media only screen and (max-width:991px){
+    .database{
+  margin-top: 22px;
+  width: 100%;
+ margin: auto;
+ /* margin-top: -270px; */
+}
+
+  }
+
+
+
+
+
+
+
+
+
+
+
+</style>
+
+
+
+
+
+
+</body>
+
+</html>
+
+
+
+<script>
+  $(document).ready(function() {
+          $('#datatable thead tr').clone(true).appendTo( '#datatable thead' );
+            $('#datatable thead tr:eq(1) th').each( function (i) {
+                var title = $(this).text();
+                $(this).html( '<input type="text" placeholder="Search '+title+'" />' );
+         
+                $( 'input', this ).on( 'keyup change', function () {
+                    if ( table.column(i).search() !== this.value ) {
+                        table
+                            .column(i)
+                            .search( this.value )
+                            .draw();
+                    }
+                } );
+            } );
+         
+            var table = $('#datatable').DataTable( {
+                // sDom:"input", 
+                orderCellsTop: true,
+                fixedHeader: true
+            } ); 
+         
+        } );
+</script>

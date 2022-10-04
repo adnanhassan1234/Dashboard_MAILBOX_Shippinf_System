@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Enter Home address</title>
+  <!--tailwind link-->
+  <!-- <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet"> -->
+
+  <link rel="shortcut icon" href="assests/img/apple-touch-icon.png" />
+  <!--bootstrap link-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css">
+  <!--bootstrap font awasome 4.7 version-->
+
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <link rel="stylesheet" href="assets/Responsive/responsive.css">
+
+  <!--font link closed-->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+
+  <!--aos link-->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="assets/css/default.css">
+
+</head>
+
+<body style="background-color:#f0f0f0;">
+ 
+
+    <div id="fixedTop">
+    </div>
+
+    <div class="page-wraper">
+        <header class="site-header d-flex mb-2">
+            <div class="container-fluid">
+                <div class="row pl-xxl-5 pr-xxl-5 pr-0">
+                    <div class="col-6 col-md-6 col-lg-6 py-3 d-flex align-items-center">
+                        <a href="home.html" title="Home" class="pr-2">
+                            <img src="assets/img/logo" alt="logo" class="roundLogo">
+                        </a>
+
+                        <div class="text-black font-weight-bold fs-9">
+                                
+                            Enter Home address
+
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-6 col-lg-6 text-right py-3 d-flex align-items-center justify-content-end">
+                        <a href="shop for me.html" title="Shop for Me" class="mr-4 d-none d-lg-inline-block">Shop for Me</a>
+
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-sm dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="background-color: rgb(238, 237, 237);">
+                                <i class="fa fa-user"></i> adnan <span class="d-none d-lg-inline-block">h.</span>
+                            </button>
+                            <div class="dropdown-menu dropdown-menu-left pb-2">
+                                <a href="shop for me.html" title="Shop for Me" class="dropdown-item">Shop for Me</a>
+                                <a href="/client/mailout-mps/" title="Multiple-Package Mailout" class="dropdown-item">Multiple-Package Mailout</a>
+                                <a href="funds.html" title="Multiple-Package Mailout" class="dropdown-item">Edit a Profile</a>
+                                <a href="/client/deposit/" title="Transaction History" class="dropdown-item">Account History</a>
+                                <a href="/client/claim/create" title="Missing Package" class="dropdown-item">Missing Package</a>
+                                <a class="dropdown-item" href="https://planetexpress.com/contact-us/">Contact Us</a>
+                                <a href="/client/account/" title="Settings" class="dropdown-item">Settings</a>
+                                <a class="dropdown-item" href="/sign/out">Sign out</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+<!-- crumb -->
+
+<div class="container"  style="margin-top: 84px;">
+    <div class="row">
+        <div class="col-12 pb-2 small mb-2">
+<a href="home.html">Dashboard</a> /&nbsp;
+<a href="">My Addresses</a>&nbsp;/&nbsp;
+<a href="funds.html">
+    Create Address</a>
+        </div>
+    </div>
+</div>
+
+
+
+<!-- ENTER HOME ADDRESSES -->
+
+<div class="panel py-5"  style="background-color:#f0f0f0;">
+    <div class="container" style="background-color: #f0f0f0; ">
+        <div class="panel-body" id="homeaddress" style="  border: 1px solid #ccc;">
+            <h1 class="new-h1">Enter Home address</h1>
+    <div id="snippet-createAddressForm1583-form">    <form action="/client/first-address/?message=1" method="post" id="frm-createAddressForm1583-form1583">
+    <div class="row">
+    <div class="col-12 col-sm-6">
+        <div class="form-group">
+            <label for="frm-createAddressForm1583-form1583-country_id" class="form-control-label">Country/Region</label>
+            <select name="country_id" class="combobox form-control" id="frm-createAddressForm1583-form1583-country_id" required data-nette-rules='[{"op":":filled","msg":"This field is required."}]' style="background-color: #f0f0f0;"><option value="231">Afghanistan</option><option value="244">Åland Islands</option><option value="230">Albania</option><option value="38">Algeria</option><option value="39">American Samoa</option><option value="40">Andorra</option><option value="41">Angola</option><option value="42">Anguilla</option><option value="232">Antarctica</option><option value="43">Antigua and Barbuda</option><option value="44">Argentina</option><option value="45">Armenia</option><option value="46">Aruba</option><option value="24">Australia</option><option value="2">Austria</option><option value="47">Azerbaijan</option><option value="48">Bahamas</option><option value="49">Bahrain</option><option value="50">Bangladesh</option><option value="51">Barbados</option><option value="52">Belarus</option><option value="3">Belgium</option><option value="53">Belize</option><option value="54">Benin</option><option value="55">Bermuda</option><option value="56">Bhutan</option><option value="34">Bolivia</option><option value="245">Bonaire</option><option value="233">Bosnia and Herzegovina</option><option value="57">Botswana</option><option value="234">Bouvet Island</option><option value="58">Brazil</option><option value="235">British Indian Ocean Territory</option><option value="59">Brunei</option><option value="236">Bulgaria</option><option value="60">Burkina Faso</option><option value="61">Burma (Myanmar)</option><option value="62">Burundi</option><option value="63">Cambodia</option><option value="64">Cameroon</option><option value="4">Canada</option><option value="65">Cape Verde</option><option value="237">Cayman Islands</option><option value="66">Central African Republic</option><option value="67">Chad</option><option value="68">Chile</option><option value="5">China</option><option value="238">Christmas Island</option><option value="239">Cocos (Keeling) Islands</option><option value="69">Colombia</option><option value="70">Comoros</option><option value="71">Congo, Dem. Republic</option><option value="72">Congo, Republic</option><option value="240">Cook Islands</option><option value="73">Costa Rica</option><option value="74">Croatia</option><option value="75">Cuba</option><option value="76">Cyprus</option><option value="16">Czech Republic</option><option value="20">Denmark</option><option value="77">Djibouti</option><option value="78">Dominica</option><option value="79">Dominican Republic</option><option value="80">East Timor</option><option value="81">Ecuador</option><option value="82">Egypt</option><option value="83">El Salvador</option><option value="84">Equatorial Guinea</option><option value="85">Eritrea</option><option value="86">Estonia</option><option value="87">Ethiopia</option><option value="88">Falkland Islands</option><option value="89">Faroe Islands</option><option value="90">Fiji</option><option value="7">Finland</option><option value="8">France</option><option value="241">French Guiana</option><option value="242">French Polynesia</option><option value="243">French Southern Territories</option><option value="91">Gabon</option><option value="92">Gambia</option><option value="93">Georgia</option><option value="1">Germany</option><option value="94">Ghana</option><option value="97">Gibraltar</option><option value="9">Greece</option><option value="96">Greenland</option><option value="95">Grenada</option><option value="98">Guadeloupe</option><option value="99">Guam</option><option value="100">Guatemala</option><option value="101">Guernsey</option><option value="102">Guinea</option><option value="103">Guinea-Bissau</option><option value="104">Guyana</option><option value="105">Haiti</option><option value="106">Heard Island and McDonald Islands</option><option value="108">Honduras</option><option value="22">HongKong</option><option value="143">Hungary</option><option value="109">Iceland</option><option value="110">India</option><option value="111">Indonesia</option><option value="112">Iran</option><option value="113">Iraq</option><option value="26">Ireland</option><option value="29">Israel</option><option value="10">Italy</option><option value="32">Ivory Coast</option><option value="115">Jamaica</option><option value="11">Japan</option><option value="116">Jersey</option><option value="117">Jordan</option><option value="118">Kazakhstan</option><option value="119">Kenya</option><option value="120">Kiribati</option><option value="121">Korea, Dem. Republic of</option><option value="122">Kuwait</option><option value="123">Kyrgyzstan</option><option value="124">Laos</option><option value="125">Latvia</option><option value="126">Lebanon</option><option value="127">Lesotho</option><option value="128">Liberia</option><option value="129">Libya</option><option value="130">Liechtenstein</option><option value="131">Lithuania</option><option value="12">Luxemburg</option><option value="132">Macau</option><option value="133">Macedonia</option><option value="134">Madagascar</option><option value="135">Malawi</option><option value="136">Malaysia</option><option value="137">Maldives</option><option value="138">Mali</option><option value="139">Malta</option><option value="114">Man Island</option><option value="140">Marshall Islands</option><option value="141">Martinique</option><option value="142">Mauritania</option><option value="35">Mauritius</option><option value="144">Mayotte</option><option value="145">Mexico</option><option value="146">Micronesia</option><option value="147">Moldova</option><option value="148">Monaco</option><option value="149">Mongolia</option><option value="150">Montenegro</option><option value="151">Montserrat</option><option value="152">Morocco</option><option value="153">Mozambique</option><option value="154">Namibia</option><option value="155">Nauru</option><option value="156">Nepal</option><option value="13">Netherlands</option><option value="157">Netherlands Antilles</option><option value="158">New Caledonia</option><option value="27">New Zealand</option><option value="159">Nicaragua</option><option value="160">Niger</option><option value="31">Nigeria</option><option value="161">Niue</option><option value="162">Norfolk Island</option><option value="163">Northern Mariana Islands</option><option value="23">Norway</option><option value="164">Oman</option><option value="165" selected>Pakistan</option><option value="166">Palau</option><option value="167">Palestinian Territories</option><option value="168">Panama</option><option value="169">Papua New Guinea</option><option value="170">Paraguay</option><option value="171">Peru</option><option value="172">Philippines</option><option value="173">Pitcairn</option><option value="14">Poland</option><option value="15">Portugal</option><option value="174">Puerto Rico</option><option value="175">Qatar</option><option value="176">Reunion Island</option><option value="36">Romania</option><option value="177">Russian Federation</option><option value="178">Rwanda</option><option value="179">Saint Barthelemy</option><option value="180">Saint Kitts and Nevis</option><option value="181">Saint Lucia</option><option value="182">Saint Martin</option><option value="183">Saint Pierre and Miquelon</option><option value="184">Saint Vincent and the Grenadines</option><option value="185">Samoa</option><option value="186">San Marino</option><option value="187">São Tomé and Príncipe</option><option value="188">Saudi Arabia</option><option value="189">Senegal</option><option value="190">Serbia</option><option value="191">Seychelles</option><option value="192">Sierra Leone</option><option value="25">Singapore</option><option value="37">Slovakia</option><option value="193">Slovenia</option><option value="194">Solomon Islands</option><option value="195">Somalia</option><option value="30">South Africa</option><option value="196">South Georgia and the South Sandwich Islands</option><option value="28">South Korea</option><option value="6">Spain</option><option value="197">Sri Lanka</option><option value="246">St. Maarten (Dutch)</option><option value="247">St. Maarten (French)</option><option value="198">Sudan</option><option value="199">Suriname</option><option value="200">Svalbard and Jan Mayen</option><option value="201">Swaziland</option><option value="18">Sweden</option><option value="19">Switzerland</option><option value="202">Syria</option><option value="203">Taiwan</option><option value="204">Tajikistan</option><option value="205">Tanzania</option><option value="206">Thailand</option><option value="33">Togo</option><option value="207">Tokelau</option><option value="208">Tonga</option><option value="209">Trinidad and Tobago</option><option value="210">Tunisia</option><option value="211">Turkey</option><option value="212">Turkmenistan</option><option value="213">Turks and Caicos Islands</option><option value="214">Tuvalu</option><option value="215">Uganda</option><option value="216">Ukraine</option><option value="217">United Arab Emirates</option><option value="17">United Kingdom</option><option value="21">United States</option><option value="218">Uruguay</option><option value="219">Uzbekistan</option><option value="220">Vanuatu</option><option value="107">Vatican City State</option><option value="221">Venezuela</option><option value="222">Vietnam</option><option value="223">Virgin Islands (British)</option><option value="224">Virgin Islands (U.S.)</option><option value="225">Wallis and Futuna</option><option value="226">Western Sahara</option><option value="227">Yemen</option><option value="228">Zambia</option><option value="229">Zimbabwe</option></select>
+        </div>
+    </div>
+    </div>
+    <div class="row">
+    <div class="col-12 col-sm-6">
+        <div class="form-group">
+            <label class="required form-control-label" for="frm-createAddressForm1583-form1583-firstname">First name</label>
+            <input type="text" name="firstname" class="form-control">
+        </div>
+    </div>
+    <div class="col-12 col-sm-6">
+        <div class="form-group">
+            <label class="required form-control-label" for="frm-createAddressForm1583-form1583-lastname">Last name</label>
+            <input type="text" name="lastname" class="form-control">
+        </div>
+    </div>
+    <div class="col-12 col-sm-6">
+        <div class="form-group">
+            <label for="frm-createAddressForm1583-form1583-address_line_1" class="form-control-label">Address line 1<span class="text-danger">&nbsp;*</span></label>
+            <input type="text" name="address_line_1" class="form-control">
+        </div>
+    </div>
+    <div class="col-12 col-sm-6">
+        <div class="form-group">
+            <label for="frm-createAddressForm1583-form1583-address_line_2" class="form-control-label">Address line 2</label>
+                <small>(optional)</small>
+            <input type="text" name="address_line_2" maxlength="35"  class="form-control">
+        </div>
+    </div>
+    <div class="col-12 col-sm-6">
+        <div class="form-group">
+            <label for="frm-createAddressForm1583-form1583-city" class="form-control-label">City<span class="text-danger">&nbsp;*</span></label>
+            <input type="text" name="city" maxlength="35"class="form-control">
+        </div>
+    </div>
+    <div class="col-12 col-sm-6">
+        <div class="form-group">
+            <label for="frm-createAddressForm1583-form1583-company_name" class="form-control-label">Company name</label>
+                <small>(optional)</small>
+            <input type="text" name="company_name" maxlength="35"class="form-control">
+        </div>
+    </div>
+    <div class="col-12 col-sm-6">
+        <div class="form-group">
+            <!-- <label for="frm-createAddressForm1583-form1583-state_id">State / Province / Region <small>(optional)</small></label>
+            <select name="state_id" class="combobox" id="frm-createAddressForm1583-form1583-state_id" disabled data-nette-rules='[{"op":":equal","rules":[{"op":":filled","msg":"This field is required."}],"control":"country_id","arg":[4,10,11,21,58,111,145]}]';><option value="">Select option</option></select>
+
+       -->
+            <label class="my-1 mr-2" for="inlineFormCustomSelectPref">State / Province / Region </label>
+            <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref" id="frm-createAddressForm1583-form1583-state_id" disabled data-nette-rules='[{"op":":equal","rules":[{"op":":filled","msg":"This field is required."}],"control":"country_id","arg":[4,10,11,21,58,111,145]}]';>
+              <option selected>Select option</option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+            </select>
+    
+
+
+
+              
+        </div>
+    </div>
+    <div class="col-12 col-sm-6">
+        <div class="form-group">
+            <label for="frm-createAddressForm1583-form1583-tax_id" class="form-control-label">Tax ID</label>
+                <small>(optional)</small>
+            <input type="text" name="tax_id"  class="form-control">
+        </div>
+    </div>
+    <div class="col-12 col-sm-6">
+        <div class="form-group">
+            <label for="frm-createAddressForm1583-form1583-zip" class="form-control-label">Zip code <small>(postal code)'</small><span class="text-danger">&nbsp;*</span></label>
+            <input type="text" name="zip" class="form-control">
+        </div>
+    </div>
+    <div class="col-12 col-sm-6">
+        <div class="form-group">
+            <label for="frm-createAddressForm1583-form1583-phone" class="form-control-label">Phone number<span class="text-danger">&nbsp;*</span></label>
+            <input type="text" name="phone" pattern="^[^|]*$" class="phoneNumberInput form-control" id="frm-createAddressForm1583-form1583-phone" >
+        </div>
+    </div>
+    </div>
+    
+    <div class="row">
+    <div class="col-12">
+        <div class="form-group mt-2 mb-4">
+            <div class="form-check d-inline-block">
+                <input class="form-check-input" type="checkbox" name="beforeSubmit[agree_1583]" id="frm-createAddressForm1583-form1583-beforeSubmit-agree_1583" required data-nette-rules='[{"op":":filled","msg":"This field is required."}]'>
+                <label class="font-weight-normal" for="frm-createAddressForm1583-form1583-beforeSubmit-agree_1583"><span style="font-size: 14px;">Confirm 1583 Form<span class="text-danger">*</span> (formality for Post Office allowing us to accept your packages). <input type="submit" name="preview" value="Click here for preview" formnovalidate class="btn-link--forced fs-95"></span></label>
+            </div>
+        </div>
+    </div>
+    </div>
+    
+    <div class="form-group">
+    <button class="btn btn-success btn-new" title="Add address" type="submit" name="send" value="Save">Add address</button>
+    
+    </div>
+    <input type="hidden" name="_token_" value="3gp3wn6kryfzPRlTNItx059ctF0/RWflzVnQ0="><input type="hidden" name="_do" value="createAddressForm1583-form1583-submit"></form>
+    </div>
+       </div>
+    </div>
+</div>
+
+
+
+
+
+
+      <!--function scrollFunction -->
+ <!-- <div class="scrolltop float-right">
+  <i class="fa fa-angle-up" onclick="topFunction()" id="myBtn"></i>
+</div>
+  -->
+
+  <!--javascript link-->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>
+  <!--aos link-->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <!-- tabs -->
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script defer src="js/custom.js"></script>
+   
+
+  <script>
+
+
+
+
+
+
+    AOS.init({
+      offset: 350,
+      duration: 1000,
+
+    });
+
+
+
+ 
+  </script>
+
+
+
+  <script>
+
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+            (function(){
+                var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+                s1.async=true;
+                s1.src='https://embed.tawk.to/602dad6d918aa261273ff1c4/1eup6qssr';
+                s1.charset='UTF-8';
+                s1.setAttribute('crossorigin','*');
+                s0.parentNode.insertBefore(s1,s0);
+            })();
+
+    mybutton = document.getElementById("myBtn");
+    window.onscroll = function () { scrollFunction() };
+
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      }
+      else {
+        mybutton.style.display = "none";
+      }
+    }
+
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+
+  </script>
+
+
+<style>
+
+.panel .panel-body, .panel .panel-xl-body {
+    padding: 15px;
+    border: 1px solid #ccc;
+    
+}
+.panel-body{
+    margin: auto;
+    background-color: white;
+    max-width: 770px;
+    padding: 15px;
+  
+}
+h1 {
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-bottom: .3rem;
+}
+label {
+    display: inline-block;
+    margin-bottom: .5rem;
+}
+.form-group {
+    margin-bottom: 1rem;
+}
+.form-control {
+    display: inline-block;
+    max-width: 100%;
+    height: auto;
+    border-radius: 0;
+    padding: 3px 8px;
+}
+
+.bootstrap-select .dropdown-toggle .filter-option {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding-top: inherit;
+    padding-right: inherit;
+    padding-bottom: inherit;
+    padding-left: inherit;
+    height: 100%;
+    width: 100%;
+    text-align: left;
+}
+.bootstrap-select > .dropdown-toggle {
+    position: relative;
+    width: 100%;
+    z-index: 1;
+    text-align: right;
+    white-space: nowrap;
+}
+.panel .panel-body, .panel .panel-xl-body {
+    padding: 9px;
+    border: none;
+}
+
+
+
+</style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

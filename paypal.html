@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add Funds</title>
+    <!--tailwind link-->
+    <!-- <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet"> -->
+
+    <link rel="shortcut icon" href="assests/img/apple-touch-icon.png" />
+    <!--bootstrap link-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css">
+    <!--bootstrap font awasome 4.7 version-->
+
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <link rel="stylesheet" href="assets/Responsive/responsive.css">
+
+    <!--font link closed-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+
+    <!--aos link-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="assets/css/default.css">
+
+</head>
+
+<body style="background-color: #F0F0F0;">
+
+
+
+    <div id="fixedTop">
+    </div>
+
+    <div class="page-wraper">
+        <header class="site-header d-flex mb-2">
+            <div class="container-fluid">
+                <div class="row pl-xxl-5 pr-xxl-5 pr-0">
+                    <div class="col-6 col-md-6 col-lg-6 py-3 d-flex align-items-center">
+                        <a href="home.html" title="Home" class="pr-2">
+                            <img src="assets/img/logo" alt="logo" class="roundLogo">
+                        </a>
+
+                        <div class="fs-9" style="color: rgb(12, 12, 12);font-weight: 600;">
+
+
+                            Add Funds
+
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-6 col-lg-6 text-right py-3 d-flex align-items-center justify-content-end">
+                        <a href="shop for me.html" title="Shop for Me" class="mr-4 d-none d-lg-inline-block">Shop for Me</a>
+
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-sm dropdown-toggle" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false"
+                                style="background-color: rgb(238, 237, 237);">
+                                <i class="fa fa-user"></i> adnan <span class="d-none d-lg-inline-block">h.</span>
+                            </button>
+                            <div class="dropdown-menu dropdown-menu-left pb-2">
+                                <a href="shop for me.html" title="Shop for Me" class="dropdown-item">Shop for Me</a>
+                                <a href="/client/mailout-mps/" title="Multiple-Package Mailout"
+                                    class="dropdown-item">Multiple-Package Mailout</a>
+                                <a href="funds.html" title="Multiple-Package Mailout" class="dropdown-item">Edit a
+                                    Profile</a>
+                                <a href="/client/deposit/" title="Transaction History" class="dropdown-item">Account
+                                    History</a>
+                                <a href="/client/claim/create" title="Missing Package" class="dropdown-item">Missing
+                                    Package</a>
+                                <a class="dropdown-item" href="https://planetexpress.com/contact-us/">Contact Us</a>
+                                <a href="/client/account/" title="Settings" class="dropdown-item">Settings</a>
+                                <a class="dropdown-item" href="/sign/out">Sign out</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- crumb -->
+
+        <div class="container" style="margin-top: 84px;">
+            <div class="row">
+                <div class="col-12 pb-2 small mb-2">
+                    <a href="home.html">Dashboard</a> /&nbsp;
+                    <a href="funds.html">
+                        Add Funds</a>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- paypal -->
+
+        <div class="page-content-padding">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="page-content-padding text-center mx-auto" id="snippet--content">
+            <div class="container">
+                <div class="flashes">
+                </div>
+                <div id="snippet-newMessages-control"></div>
+
+
+
+                <form method="post" id="deposit_create_form"
+                    data-select-url="/client/deposit/create?do=createForm-select" data-select-param="createForm-id"
+                    data-amount-param="createForm-amount" style="background-color: white; padding: 12px;margin-top: 22px;">
+                    <div class="text-center mx-auto">
+
+
+                  <div class="full">
+                    <ul class=" list-group payment-method text-left mb-3 mx-auto" style="max-width: 540px">
+
+                        <!-- <li class="list-group-item  px-4">
+                            <label id="12-label" title="Bitcoin, Bitcoin Cash, Etherum, Dogecoin and many more"
+                                class="d-flex align-items-center mb-0"
+                                for="frm-createForm-form-payment_method_id-12">
+                                <input data-name="Bitcoin, Bitcoin Cash, Etherum, Dogecoin and many more"
+                                    class="mr-2" type="radio" name="payment_method_id"
+                                    id="frm-createForm-form-payment_method_id-12" value="12">
+                                <div style="min-width: 100px;">
+                                    <img src="assets/img/01.png" alt="Bitcoin" class="mr-3"
+                                        style="max-width: 64px; max-height: 24px;">
+                                </div>
+                                <div>
+                                    <div>
+                                        <p>
+                                            Bitcoin, Bitcoin Cash,Dogecoin and many more</p>
+
+                                        <div class="font-weight-bold text-green">
+                                            Get 1% cashback every time you use Crypto currency
+                                        </div>
+                                        <hr>
+                                    </div>
+                            </label>
+                        </li> -->
+
+                        <li class="list-group-item px-4" style="border-bottom: 2px solid rgb(196, 195, 195);">
+                            <label id="3-label" title="Credit Card" class="d-flex align-items-center mb-0"
+                                for="frm-createForm-form-payment_method_id-3">
+                                <input data-name="Credit Card" class="mr-2" type="radio" name="payment_method_id"
+                                    id="frm-createForm-form-payment_method_id-3" value="3">
+                                <div style="min-width: 90px;">
+                                    <img src="assets/img/02.jpg" alt="Bitcoin" class="mr-3"
+                                        style="max-width: 64px; max-height: 24px;">
+                                </div>
+                                <div>
+                                    <div>
+                                        <strong>Credit Card</strong>
+
+                                    </div>
+                            </label> 
+                        </li>     
+                        <li class="list-group-item px-4"  style="border-bottom: 2px solid rgb(196, 195, 195);">
+                            <label id="2-label" title="PayPal" class="d-flex align-items-center mb-0"
+                                for="frm-createForm-form-payment_method_id-2">
+                                <input data-name="PayPal" class="mr-2" type="radio" name="payment_method_id"
+                                    id="frm-createForm-form-payment_method_id-2" value="2">
+                                <div style="min-width: 90px;">
+                                    <img src="assets/img/03.png" alt="Bitcoin" class="mr-3"
+                                        style="max-width: 64px; max-height: 24px;">
+                                </div>
+                                <div>
+                                    <div>
+                                        <strong>PayPal</strong>
+
+                                    </div>
+                            </label>
+                        </li>
+                       
+                        <li class="list-group-item px-4" >
+                            <label id="1-label" title="Bankwire" class="d-flex align-items-center mb-0"
+                                for="frm-createForm-form-payment_method_id-1">
+                                <input data-name="Bankwire" class="mr-2" type="radio" name="payment_method_id"
+                                    id="frm-createForm-form-payment_method_id-1" value="1">
+                                <div style="min-width: 90px;">
+                                    <img src="assets/img/06.jpg" alt="Bitcoin" class="mr-3"
+                                        style="max-width: 64px; max-height: 24px;">
+                                </div>
+                                <div>
+                                    <div>
+                                        <strong>Bankwire</strong>
+
+                                    </div>
+                            </label>
+                        </li>
+                    </ul>
+                  </div>
+
+                        <div id="snippet-createForm-inputs">
+                            <div class="text-center payment-input mt-4">
+                                <div class="d-flex justify-content-center align-items-center">
+                                    <div class=" live-validation-parent position-relative mr-5">
+                                        <label class="mr-2" for="frm-createForm-form-amount">Amount $:</label>
+                                        <input style="max-width: 72px" class="p-2" type="text" name="amount"
+                                            id="frm-createForm-form-amount"
+                                            data-nette-rules='[{"op":"optional"},{"op":":float","msg":"Amount has to be a number."},{"op":":min","msg":"Minimal amount is $5","arg":5},{"op":":equal","rules":[{"op":":min","msg":"Minimal amount for selected payment type is $50","arg":50}],"control":"payment_method_id","arg":1},{"op":":notEqual","rules":[{"op":":max","msg":"You have reached your monthly limit of $600","arg":600.0}],"control":"payment_method_id","arg":12}]'>
+                                    </div>
+                                    <div class="cashback-item">
+                                        Cashback: <strong class="text-green"><span data-cashback-value></span></strong>
+                                    </div>
+                                </div>
+                                <div class="mb-2 mt-3 cashback-item">
+                                    <em>Total amount you receive:</em> <strong><span data-cashback-total
+                                            class="d-inline-block text-left" style="min-width: 40px"></span></strong>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="clearfix manualErrorParent mt-4 mb-5">
+                            <input type="submit" class="btn btn-success" name="send" value="Pay">
+                        </div>
+                    </div>
+                    <input type="hidden" name="_token_" value="bhvjbb4y3zW2yUJVctf5waG+onnmxcIFqxpsE="><input
+                        type="hidden" name="_do" value="createForm-form-submit">
+                </form>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+  <!--javascript link-->
+  <!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script> -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>
+  <!--aos link-->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <!-- tabs -->
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script defer src="js/custom.js"></script>
+   
+
+
+
+
+
+
+
+
+    <!-- scc -->
+
+    <style>
+        body {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .text-green {
+            color: #090;
+        }
+
+        .font-weight-bold {
+            font-weight: 700 !important;
+        }
+
+        .list-group-item {
+            position: relative;
+            display: block;
+            padding: .75rem 1.25rem;
+            margin-bottom: -1px;
+            background-color: #fff;
+            border: 1px solid rgba(0, 0, 0, .125);
+        }
+
+        element.style {
+            max-width: 540px;
+        }
+
+        @media only screen and (min-width: 768px) {
+
+            #client.upgradepayment .payment-method,
+            #client.client-deposit.create .payment-method {
+                width: 590px;
+                max-width: 100%;
+                margin: 0 auto;
+            }
+        }
+
+        #client b,
+        #client strong {
+            font-weight: bold;
+        }
+
+form{
+    max-width: 600px;
+    margin: auto;
+}
+
+        .list-group-item:first-child {
+            border-top-left-radius: .25rem;
+            border-top-right-radius: .25rem;
+        }
+
+        .list-group-item:first-child {
+            border-top-left-radius: .25rem;
+            border-top-right-radius: .25rem;
+            margin-top: 31px;
+        }
+
+        .pl-4,
+        .px-4 {
+            padding-left: 1.5rem !important;
+        }
+
+        .pr-4,
+        .px-4 {
+            padding-right: 1.5rem !important;
+        }
+
+        .list-group-item {
+            position: relative;
+            display: block;
+            padding: .75rem 1.25rem;
+            margin-bottom: -1px;
+            background-color: #fff;
+            border: 1px solid rgba(0, 0, 0, .125);
+        }
+
+        b,
+        strong {
+            font-weight: bolder;
+            font-size: 14px;
+        }
+    </style>
+
+
+
+
+
+
+
+</body>
+
+</html>

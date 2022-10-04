@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login</title>
+  <!--tailwind link-->
+  <!-- <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet"> -->
+
+  <link rel="shortcut icon" href="assests/img/apple-touch-icon.png" />
+  <!--bootstrap link-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css">
+  <!--bootstrap font awasome 4.7 version-->
+
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <link rel="stylesheet" href="assets/Responsive/responsive.css">
+
+  <!--font link closed-->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+
+  <!--aos link-->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="assets/css/default.css">
+
+</head>
+
+<body>
+ 
+
+
+<!--login modal-->
+
+   <div class="forget-section py-4">   
+    <div class="container">
+    <div class="row pt-4 pb-md-2">
+        <div class="col-12 text-center">
+                <a href="home.html" title="Planet Express">
+                    <img src="assets/img/logo.png" alt="Planet Express" class="mw-120px">
+                </a>
+            </div>
+    </div>
+
+    <div id="snippet--content">
+        <div class="flashes">
+</div>
+
+<div class="row">
+    <div class="col-12 col-sm-8 offset-sm-2 col-md-6 offset-md-3">
+        <div class="panel mt-5 box-shadow-gray">
+            <div class="panel-xl-body p-4 p-md-5">
+                <h1 class="text-center fs-17i">Forgotten password</h1>
+
+                <div class="signInForm mt-3 text-center fs-10">
+                    <p>
+                        Have you forgotten your password? Enter your email and we will send you a reset link. Once sent, follow instructions in the email.
+                    </p>
+                    <div class="pt-3 d-flex justify-content-center mb-3">
+                    <form action="" method="post" id="frm-forgottenForm-form">
+
+                    <table class="classic-form">
+                    <tr class="required">
+                        <th><label for="frm-forgottenForm-form-email" class="form-control-label required">Email<span class="text-danger">&nbsp;*</span></label></th>
+
+                        <td><input type="email" name="email" id="frm-forgottenForm-form-email" required data-nette-rules='[{"op":":filled","msg":"This field is required."},{"op":":email","msg":"Please enter a valid email address."}]' class="form-control text"></td>
+                    </tr>
+
+                    <tr>
+                        <th></th>
+
+                        <td><input type="submit" name="send" class="btn-success btn-block btn btn-success text-uppercase font-weight-bold btn btn-primary button" value="Reset password"></td>
+                    </tr>
+                    </table>
+
+                    <input type="hidden" name="_token_" value="53otkctxu1vNnM0ceWFkaoimnOvSx2qmw+xVQ="><input type="hidden" name="_do" value="forgottenForm-form-submit"><!--[if IE]><input type=IEbug disabled style="display:none"><![endif]-->
+                    </form>
+                 </div>
+                </div>
+
+                <div class="signformdiscl text-center">
+                    Have you remembered? <a href='index.html' title='Sign in' class="text-link">Sign in</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    </div>
+     </div>
+   </div>
+
+
+
+
+  </script>
+
+
+</body>
+
+</html>
+
+<style>
+
+.panel .panel-body, .panel .panel-xl-body {
+    padding: 1px;
+    border: 1px solid #ccc;
+    /* box-shadow: 0 0 2px rgb(0 0 0 / 16%); */
+    box-shadow: 0 5px 15px rgb(0 0 0 / 50%);
+}
+body#public h1, body#blank h1 {
+    color: #000;
+    font-size: 1.8rem;
+}
+.fs-17i {
+    font-size: 1.7rem !important;
+}
+.text-center {
+    text-align: center!important;
+}
+table tbody td, .table tbody td {
+    background-color: #fff;
+    border: 1px solid #ccc;
+}
+table td, table th, .table td, .table th {
+    position: relative;
+    padding: 5px 10px;
+}
+label {
+    display: inline-block;
+    margin-bottom: .5rem;
+}
+table:not(.no-stripes) tbody tr:nth-child(even) td {
+    background-color: #f3f3f3;
+}
+
+table tbody td, .table tbody td {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    /* box-shadow: 0 0 2px rgb(0 0 0 / 16%); */
+}
+table td, table th, .table td, .table th {
+    position: relative;
+    padding: 5px 10px;
+}
+
+
+
+input[type=button].btn-block, input[type=reset].btn-block, input[type=submit].btn-block {
+    width: 100%;
+}
+.classic-form input, .classic-form select, form input, form select {
+    padding: 3px 8px;
+}
+.btn-success {
+    background: #a8dba8;
+    border-color: #a8dba8;
+    color: #000;
+    font-weight: bold;
+}
+.font-weight-bold {
+    font-weight: 700!important;
+}
+.text-uppercase {
+    text-transform: uppercase!important;
+}
+.btn-block {
+    display: block;
+    width: 100%;
+}
+.btn-success {
+    color: #fff;
+    background-color: #28a745;
+    border-color: #28a745;
+}
+
+
+</style>
